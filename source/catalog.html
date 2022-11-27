@@ -11,11 +11,13 @@
             <div class="header__content">
               <nav class="header__nav">
 
-                <picture class="header__logo">
-                  <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)"></source>
-                  <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)"></source>
-                  <img src="img/svg/logo-mobile.svg" alt="Логотип интернет-магазина Cat Enetrgy.">
-                </picture>
+                <a href="index.html" class="header__logo-link">
+                  <picture class="header__logo">
+                    <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)"></source>
+                    <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)"></source>
+                    <img src="img/svg/logo-mobile.svg" alt="Логотип интернет-магазина Cat Enetrgy.">
+                  </picture>
+                </a>
 
                 <picture class="header__logo header__alt-logo">
                   <img src="img/svg/alt-logo.svg" alt="Cat Enetrgy.">
@@ -28,15 +30,15 @@
                 <div class="header__menu">
                   <ul class="header__list list">
                     <li class="header__item list__item">
-                      <a href="" class="header__link list__link main-link">Главная</a>
+                      <a href="index.html" class="header__link list__link main-link">Главная</a>
                     </li>
 
                     <li class="header__item list__item">
-                      <a href="" class="header__link list__link main-link">Каталог продукции</a>
+                      <a href="#" class="header__link list__link main-link">Каталог продукции</a>
                     </li>
 
                     <li class="header__item list__item">
-                      <a href="" class="header__link list__link main-link">Подбор программы</a>
+                      <a href="form.html" class="header__link list__link main-link">Подбор программы</a>
                     </li>
                   </ul>
                 </div>
@@ -410,7 +412,7 @@
                       Показать еще 100500 товаров
                     </b>
 
-                    <p class="product-card__text text">
+                    <p class="product-card__text text-page">
                       На самом деле вкусов гораздо больше!
                     </p>
                   </a>
@@ -420,12 +422,123 @@
                   </button>
                 </li>
 
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="another-product">
+          <div class="another-product__body">
+            <div class="another-product__content">
+              <ul class="another-product__list">
+                <li class="another-product__item">
+                  <table class="another-product__description another-product__table table">
+                    <caption class="table__caption">
+                      Сахарозаменитель
+                    </caption>
+
+                    <tr class="table__row">
+                      <td>
+                        1 упаковка (100 г)
+                      </td>
+
+                      <td>
+                        200 &#8381;
+                      </td>
+                    </tr>
+                  </table>
+
+                  <button class="another-product__button ">
+                    Показать все
+                  </button>
+                </li>
+
+                <li class="another-product__item">
+                  <table class="another-product__description another-product__table table">
+                    <caption class="table__caption">
+                      Питьевая вода
+                    </caption>
+
+                    <tr class="table__row">
+                      <td>
+                        5 литров
+                      </td>
+
+                      <td>
+                        50 &#8381;
+                      </td>
+                    </tr>
+                  </table>
+
+                  <button class="another-product__button ">
+                    Показать все
+                  </button>
+                </li>
+
+                <li class="another-product__item">
+                  <table class="another-product__description another-product__table table">
+                    <caption class="table__caption">
+                      Молоко
+                    </caption>
+
+                    <tr class="table__row">
+                      <td>
+                        1 литр
+                      </td>
+
+                      <td>
+                        100 &#8381;
+                      </td>
+                    </tr>
+                  </table>
+
+                  <button class="another-product__button ">
+                    Показать все
+                  </button>
+                </li>
+
+                <li class="another-product__item">
+                  <table class="another-product__description another-product__table table">
+                    <caption class="table__caption">
+                      Витамины
+                    </caption>
+
+                    <tr class="table__row">
+                      <td>
+                        1 упаковка (30 г)
+                      </td>
+
+                      <td>
+                        300 &#8381;
+                      </td>
+                    </tr>
+                  </table>
+
+                  <button class="another-product__button ">
+                    Показать все
+                  </button>
+                </li>
 
               </ul>
             </div>
           </div>
         </section>
 
+        <section class="aside">
+          <div class="aside__body">
+            <aside class="aside__content">
+              <picture class="aside__img">
+                <img src="img/svg/icon-gift.svg" alt="Подарок." width="78" height="80">
+              </picture>
+
+              <p class="aside__text text-page">
+                Закажите все
+                и получите чехол для
+                кота в подарок!
+              </p>
+            </aside>
+          </div>
+        </section>
 
         <section class="invite">
           <div class="invite__body">
@@ -434,7 +547,7 @@
                 приглашаем к сотрудничеству дилеров!
               </b>
 
-              <p class="invite__text text">
+              <p class="invite__text text-page">
                 ул. Большая
                 Конюшенная, д. 19/8
                 Санкт-Петербург
