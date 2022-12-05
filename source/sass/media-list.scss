@@ -1,0 +1,11 @@
+.media-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-list__item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}

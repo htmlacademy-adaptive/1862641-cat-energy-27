@@ -1,0 +1,57 @@
+.promo {
+  margin-bottom: 20px;
+}
+
+.promo__body {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 302px;
+
+  &::before,
+  &::after {
+    content: "";
+    min-height: 302px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: $color-main;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  &::after {
+    background-image: url("../img/jpeg/promo-bacground.jpg");
+    z-index: -2;
+  }
+}
+
+.promo__main-title {
+  color: $color-white;
+  padding: 27px 0;
+  text-align: center;
+}
+
+.promo__tagline {
+  text-align: center;
+  color: $color-white;
+}
+
+.promo__img {
+  display: block;
+  text-align: center;
+}
+
+.promo__wrapper {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.promo__link-button {
+  background-color: $color-main;
+  color: $color-white;
+}
