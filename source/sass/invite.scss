@@ -1,9 +1,5 @@
-.invite {
-  margin-top: 20px;
-}
-
 .invite__content {
-  padding: 0 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,5 +7,9 @@
 
 .invite__text {
   line-height: 20px;
+}
+
+.invite__content--background {
+  background-color: $color-basic-grey;
 }
 

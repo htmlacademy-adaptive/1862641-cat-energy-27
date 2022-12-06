@@ -12,16 +12,9 @@
   &::after {
     content: "";
     min-height: 302px;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  &::before {
-    background-color: $color-main;
-    opacity: 0.85;
-    z-index: -1;
   }
 
   &::after {
