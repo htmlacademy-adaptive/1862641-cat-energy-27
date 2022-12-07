@@ -47,3 +47,7 @@
   color: $color-black;
   text-transform: uppercase;
 }
+
+.header__menu--active {
+  display: block;
+}
