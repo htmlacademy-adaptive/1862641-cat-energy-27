@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.inner {
+  padding: 0 20px;
+}
+
 .main-title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -28,17 +32,19 @@
 }
 
 .title-line {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+
 
   &::after {
     content: "";
-    width: 52px;
-    max-width: 100%;
+    display: block;
+    min-width: 52px;
+    flex-grow: 1;
     height: 2px;
-    position: absolute;
-    top: 14px;
-    right: -20px;
     background-color: $color-main;
+    margin-top: 15px;
+    margin-left: 20px;
   }
 }
 

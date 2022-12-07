@@ -11,6 +11,7 @@
   &::before,
   &::after {
     content: "";
+    width: 100%;
     min-height: 302px;
     position: absolute;
     top: 0;
@@ -19,6 +20,7 @@
 
   &::after {
     background-image: url("../img/jpeg/promo-bacground.jpg");
+    background-repeat: no-repeat;
     z-index: -2;
   }
 }

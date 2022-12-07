@@ -2,6 +2,10 @@
   margin-top: 10px;
 }
 
+.header__content {
+  border-bottom: 1px solid $color-border;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -23,6 +27,7 @@
   z-index: 5px;
   top: 55px;
   background-color: $color-white;
+  display: none;
 }
 
 .header__burger {
