@@ -50,3 +50,57 @@
   background-color: $color-main;
   color: $color-white;
 }
+
+//TABLET
+@media (min-width: 767px) {
+  .promo {
+    margin-top: 62px;
+  }
+
+  .promo__body {
+    max-width: 767px;
+    min-height: 780px;
+
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .promo__content {
+    padding-left: 87px;
+  }
+
+  .promo__main-title {
+    color: $color-black;
+    text-align: left;
+    padding: 0;
+    padding-right: 130px;
+  }
+
+  .promo__tagline {
+    text-align: left;
+    color: $color-black;
+    margin-top: 41px;
+  }
+
+  .promo__img {
+    position: absolute;
+    z-index: -1;
+    right: 60px;
+  }
+
+  .promo__wrapper {
+    max-width: 244px;
+    margin-top: 49px;
+    padding: 0;
+  }
+
+  .promo__link-button {
+    width: 100%;
+  }
+}
+
+
+//TABLET
