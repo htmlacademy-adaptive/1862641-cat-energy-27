@@ -68,11 +68,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 72px;
+    padding-right: 76px;
   }
 
   .advantages__item {
     min-height: 280px;
-    flex-basis: 256px;
+    flex-basis: 250px;
     display: flex;
     flex-direction: column;
     position: relative;
