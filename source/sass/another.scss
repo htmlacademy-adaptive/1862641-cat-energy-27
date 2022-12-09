@@ -1,0 +1,143 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.inner {
+  padding: 0 20px;
+}
+
+.main-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.title-line {
+  display: flex;
+  justify-content: space-between;
+
+
+  &::after {
+    content: "";
+    display: block;
+    min-width: 52px;
+    flex-grow: 1;
+    height: 2px;
+    background-color: $color-main;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+}
+
+.tagline {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.link-button {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 8px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: $color-main;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.mask {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-main;
+    opacity: 0.85;
+    z-index: -1;
+  }
+}
+
+.text-page {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
+
+.main-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.bold-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.active {
+  opacity: 1;
+  visibility: hidden;
+}
+
+.link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.apostrofe {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.small-bold {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.button-page {
+  border: none;
+}

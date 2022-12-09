@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
+
 // Styles
 
 export const styles = () => {
@@ -23,7 +24,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: './source'
     },
     cors: true,
     notify: false,
@@ -35,7 +36,7 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/sass/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 

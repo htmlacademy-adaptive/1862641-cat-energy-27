@@ -1,0 +1,22 @@
+.table__caption {
+  text-align: left;
+  font-weight: 400;
+  padding-right: 50px;
+}
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.table__text--another {
+  font-size: 14px;
+  line-height: 20px;
+}
