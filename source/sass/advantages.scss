@@ -12,11 +12,11 @@
 
 .advantages__item {
   display: flex;
-  justify-content: space-between;
 
   &::before {
     content: "";
     display: block;
+    max-width: 60px;
     padding-right: 60px;
     height: 60px;
     margin-right: 20px;
@@ -51,5 +51,86 @@
 .advantages__item--four {
   &::before {
     background-image: url("../img/svg/watch.svg");
+  }
+}
+
+@media (min-width: 767px) {
+  .advantages {
+    margin-top: 30px;
+  }
+
+  .advantages__content {
+    padding: 0 30px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+
+  .advantages__item {
+    min-height: 280px;
+    flex-basis: 256px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      max-width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      padding-right: 0;
+      margin-right: 0;
+      background-color: $color-main;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 280px;
+      top: 0;
+      right: 10px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .advantages__item--one {
+    &::after {
+      background-image: url("../img/png/number-one.png");
+    }
+  }
+
+  .advantages__item--two {
+    &::after {
+      background-image: url("../img/png/number-two.png");
+    }
+  }
+
+  .advantages__item--three {
+    &::after {
+      background-image: url("../img/png/number-three.png");
+    }
+  }
+
+  .advantages__item--four {
+    &::after {
+      background-image: url("../img/png/number-four.png");
+    }
+  }
+
+  .advantages__text {
+    padding-right: 12px;
   }
 }
