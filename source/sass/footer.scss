@@ -16,3 +16,21 @@
   margin: 0 20px;
   text-align: left;
 }
+
+@media (min-width: 767px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 30px;
+  }
+
+  .footer__academy-link {
+    align-items: center;
+    margin: 0;
+  }
+
+  .footer__academy-text {
+    padding-right: 23px;
+  }
+}
