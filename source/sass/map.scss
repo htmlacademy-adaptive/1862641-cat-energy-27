@@ -1,10 +1,9 @@
 .map {
-  width: 100%;
-  margin: 0 auto;
+  max-width: 100%;
   background-color: $color-basic-grey;
 }
 
-.map__iframe {
+.map__wrapper {
   width: 100%;
   min-height: 362px;
 }

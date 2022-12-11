@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .invite__small-bold {
@@ -19,11 +18,7 @@
   padding: 0 20px;
 }
 
-.invite__content--background {
-  background-color: $color-basic-grey;
-}
-
-@media (min-width:767px) {
+@media (min-width: 767px) {
   .invite__small-bold {
     width: 150px;
     padding-left: 30px;

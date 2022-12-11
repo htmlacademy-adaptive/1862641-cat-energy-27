@@ -1,0 +1,24 @@
+.slider {
+  width: 100%;
+  z-index: 5;
+  top: 50%;
+}
+
+.slider__range {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: inherit;
+  position: relative;
+  z-index: 5;
+
+  &::-webkit-slider-thumb {
+    cursor: pointer;
+    width: 40px;
+    height: 260px;
+    -webkit-appearance: none;
+    background-image: url("../img/svg/curtain.svg");
+    background-repeat: no-repeat;
+    }
+}

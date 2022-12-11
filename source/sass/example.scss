@@ -2,10 +2,13 @@
   margin-top: 53px;
 }
 
+.example__body {
+  background-color: $color-basic-grey;
+}
+
 .example__content {
   padding: 0 20px;
   padding-top: 25px;
-  background-color: $color-example-bg;
 }
 
 .example__main-title {
@@ -17,16 +20,34 @@
   min-height: 256px;
 }
 
-.example__img {
+.example__picture {
   position: absolute;
 }
+
+.example__img {
+  max-width: none;
+}
+
+.example__picture-before {
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+  background-color: $color-basic-grey;
+}
+
+.example__picture-after {
+  width: -50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
 
 .example__changes {
   margin-top: 20px;
 }
 
-@media (min-width:767px) {
-     .example {
+@media (min-width: 767px) {
+  .example {
     margin: 0;
     padding-top: 43px;
   }
