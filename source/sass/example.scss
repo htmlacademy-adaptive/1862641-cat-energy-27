@@ -12,6 +12,31 @@
   margin-bottom: 40px;
 }
 
+.example__before-after {
+  position: relative;
+  min-height: 256px;
+}
+
+.example__img {
+  position: absolute;
+}
+
 .example__changes {
   margin-top: 20px;
+}
+
+@media (min-width:767px) {
+     .example {
+    margin: 0;
+    padding-top: 43px;
+  }
+
+  .example__content {
+    padding: 0 30px;
+    padding-top: 25px;
+  }
+
+  .example__changes {
+    margin-top: 54px;
+  }
 }

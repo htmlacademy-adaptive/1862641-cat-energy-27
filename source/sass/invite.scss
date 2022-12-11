@@ -1,9 +1,13 @@
 .invite__content {
   padding: 20px 0;
+}
+
+.invite__adress {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .invite__small-bold {
@@ -18,3 +22,22 @@
 .invite__content--background {
   background-color: $color-basic-grey;
 }
+
+@media (min-width:767px) {
+  .invite__small-bold {
+    width: 150px;
+    padding-left: 30px;
+    line-height: 26px;
+  }
+
+  .invite__text {
+    width: 160px;
+    padding-right: 30px;
+  }
+
+  .invite__city-name {
+    display: inline-block;
+    padding-top: 25px;
+  }
+}
+

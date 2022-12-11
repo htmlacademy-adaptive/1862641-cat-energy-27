@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .changes__item {
@@ -31,11 +30,39 @@
 }
 
 .changes__summ {
+  width: 100%;
   margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 30px;
+}
+
+@media (min-width:767px) {
+  .changes__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .changes__item {
+    min-width: 162px;
+    min-height: 72px;
+    margin-right: 42px;
+  }
+
+  .changes__apostrofe {
+    width: auto;
+    bottom: -5px;
+    background-color: $color-white;
+  }
+
+  .changes__summ {
+    width: 180px;
+    text-align: right;
+    padding: 0;
+    flex-grow: 1;
+
+  }
 }
