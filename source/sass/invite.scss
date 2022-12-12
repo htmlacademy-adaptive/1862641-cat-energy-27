@@ -8,23 +8,25 @@
   align-items: center;
 }
 
-.invite__small-bold {
-  padding: 0 20px;
-}
-
 .invite__text {
   line-height: 20px;
-  padding: 0 20px;
 }
 
 @media (min-width: 767px) {
-  .invite {
-    margin-top: 151px;
+  .invite__content {
+    padding: 30px 0;
+  }
+
+  .invite__body {
+    background-color: $color-basic-grey;
+  }
+
+  .invite__body-index {
+    background-color: $color-white;
   }
 
   .invite__adress {
-    flex-wrap: wrap;
-    margin-bottom: 56px;
+    margin-bottom: 0;
   }
 
   .invite__small-bold {

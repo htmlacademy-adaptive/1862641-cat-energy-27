@@ -38,11 +38,12 @@ img {
 .title-line {
   display: flex;
   justify-content: space-between;
-
+  width: 100%;
 
   &::after {
     content: "";
     display: block;
+    right: 0;
     min-width: 52px;
     flex-grow: 1;
     height: 2px;
@@ -178,6 +179,29 @@ img {
     line-height: 20px;
   }
 
+  .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .title-line {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      z-index: -1;
+      min-width: 30px;
+      height: 2px;
+      background-color: $color-main;
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+  }
+
   .link-button {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -191,6 +215,12 @@ img {
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+  }
+
+  .small-bold {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .text-page {
