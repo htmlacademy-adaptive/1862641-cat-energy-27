@@ -1,9 +1,16 @@
 .map {
-  max-width: 100%;
   background-color: $color-basic-grey;
 }
 
 .map__wrapper {
+  max-width: 100%;
+  min-height: 362px;
+  position: relative;
+}
+
+.map__iframe {
+  border: 0;
+  position: absolute;
   width: 100%;
   min-height: 362px;
 }

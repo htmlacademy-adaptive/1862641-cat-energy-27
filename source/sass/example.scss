@@ -3,7 +3,18 @@
 }
 
 .example__body {
-  background-color: $color-basic-grey;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-example-bg;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .example__content {
@@ -32,7 +43,7 @@
   width: 50%;
   overflow: hidden;
   z-index: 2;
-  background-color: $color-basic-grey;
+  background-color: $color-example-bg;
 }
 
 .example__picture-after {
@@ -52,6 +63,14 @@
     padding-top: 43px;
   }
 
+  .example__body {
+    &::after {
+      height: 462px;
+      top: 60%;
+      background-color: $color-example-bg;
+    }
+  }
+
   .example__content {
     padding: 0 30px;
     padding-top: 25px;
@@ -59,5 +78,18 @@
 
   .example__changes {
     margin-top: 54px;
+    margin-bottom: 91px;
+  }
+
+  .example__before-after {
+    position: relative;
+    min-height: 512px;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .example__picture-before {
+    background-color: inherit;
+    width: 50%;
   }
 }

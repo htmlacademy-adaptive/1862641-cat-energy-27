@@ -21,9 +21,9 @@
 
 .changes__apostrofe {
   display: block;
-  width: 90px;
+  width: 75px;
   position: absolute;
-  bottom: -9px;
+  bottom: -15px;
   text-align: center;
   background-color: $color-example-bg;
   padding: 0 8px;
@@ -38,7 +38,7 @@
   padding-top: 30px;
 }
 
-@media (min-width:767px) {
+@media (min-width: 767px) {
   .changes__wrapper {
     display: flex;
     align-items: center;
@@ -63,6 +63,5 @@
     text-align: right;
     padding: 0;
     flex-grow: 1;
-
   }
 }
