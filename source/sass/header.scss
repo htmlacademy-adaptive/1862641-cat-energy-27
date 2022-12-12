@@ -1,3 +1,7 @@
+.header__content {
+  max-width: 320px;
+  margin: 0 auto;
+}
 
 .header__nav {
   display: flex;
@@ -36,7 +40,7 @@
 .header__link {
   width: 100%;
   display: block;
-  padding: 12px 0;
+  padding: 22px 0;
   text-align: center;
   color: $color-black;
   text-transform: uppercase;
@@ -48,13 +52,15 @@
 
 //TABLET
 @media (min-width: 767px) {
+  .header__content {
+    max-width: 707px;
+    margin: 0 auto;
+  }
+
   .header__nav {
     padding-top: 26px;
   }
 
-  .header__content {
-    padding: 0 30px;
-  }
 
   .header__alt-logo {
     display: none;
@@ -91,7 +97,6 @@
 
   .header__link {
     display: block;
-    padding-bottom: 10px;
   }
 
   .header__check {
