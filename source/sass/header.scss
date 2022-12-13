@@ -122,14 +122,17 @@
     z-index: 5;
   }
 
-  .header__link {
+  .header__check {
+    text-underline-offset: 10px;
+  }
+
+  .header__link-index {
     color: $color-white;
   }
 
-
-  .header__check {
+  .header__check-index {
     text-decoration: underline $color-white;
-    text-underline-offset: 10px;
   }
 }
+
 //DESKTOP

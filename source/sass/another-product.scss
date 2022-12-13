@@ -24,3 +24,36 @@
   width: 100%;
   margin-bottom: 15px;
 }
+
+@media (min-width: 767px) {
+  .another-product__content {
+    padding: 0 30px;
+  }
+
+  .another-product__title {
+    padding-left: 38px;
+  }
+
+  .another-product__list {
+    padding: 0 38px;
+  }
+
+  .another-product__item {
+    padding: 27px 0;
+
+    &:last-child {
+      border-bottom: 1px solid $color-changes-border;
+      margin-bottom: 69px;
+    }
+  }
+
+  .another-product__table {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .another-product__cell {
+    margin-right: 51px;
+  }
+}

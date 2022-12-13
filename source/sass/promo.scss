@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-.promo__wrapper {
+.promo__button-wrapper {
   text-align: center;
 }
 
@@ -57,7 +57,7 @@
   }
 
   .promo__body {
-    max-width: 767px;
+    max-width: 707px;
     min-height: 780px;
 
 
@@ -67,7 +67,7 @@
     }
   }
 
-  .promo__content {
+  .promo__wrapper {
     padding-left: 87px;
   }
 
@@ -75,7 +75,7 @@
     color: $color-black;
     text-align: left;
     padding: 0;
-    padding-right: 130px;
+    padding-right: 50px;
   }
 
   .promo__tagline {
@@ -90,10 +90,11 @@
     right: 60px;
   }
 
-  .promo__wrapper {
+  .promo__button-wrapper {
     max-width: 244px;
     margin-top: 49px;
     padding: 0;
+    padding-left: 87px;
   }
 
   .promo__link-button {

@@ -38,7 +38,7 @@ img {
 .title-line {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
 
   &::after {
     content: "";
