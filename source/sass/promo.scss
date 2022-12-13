@@ -101,5 +101,62 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .promo {
+    margin: 0;
+  }
+
+  .promo__body {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 694px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50%;
+      min-height: 694px;
+      display: block;
+      position: absolute;
+      top: -113px;
+      left: 50%;
+    }
+
+    &::after {
+      width: 50%;
+      background-image: url("../img/jpeg/promo-bacground-dexktop.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 697px;
+      background-position: right;
+      z-index: -3;
+    }
+  }
+
+  .promo__content {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    padding-left: 80px;
+  }
+
+  .promo__main-title {
+    width: 500px;
+    padding: 0;
+    padding-top: 120px;
+  }
+
+  .promo__img {
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    left: 58%;
+    transform: translate(-55%);
+
+    img {
+      max-width: none;
+    }
+  }
+}
 
 //TABLET

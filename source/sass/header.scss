@@ -105,3 +105,31 @@
   }
 }
 //TABLET
+
+//DESKTOP
+@media (min-width: 1440px) {
+  .header__content {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .header__menu {
+    background-color: inherit;
+  }
+
+  .header__list {
+    position: relative;
+    z-index: 5;
+  }
+
+  .header__link {
+    color: $color-white;
+  }
+
+
+  .header__check {
+    text-decoration: underline $color-white;
+    text-underline-offset: 10px;
+  }
+}
+//DESKTOP
