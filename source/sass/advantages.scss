@@ -135,3 +135,13 @@
     padding-right: 12px;
   }
 }
+
+@media (min-width: 1440px) {
+  .advantages__content {
+    padding: 0;
+  }
+
+  .advantages__list {
+    padding: 0;
+  }
+}

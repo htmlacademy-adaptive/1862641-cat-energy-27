@@ -65,3 +65,22 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: 1440px) {
+  .changes__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .changes__summ {
+    padding-top: 35px;
+    text-align: left;
+  }
+
+  .changes__total {
+    padding-left: 63px;
+  }
+
+  .changes__apostrofe {
+    background-color: $color-example-bg;
+  }
+}

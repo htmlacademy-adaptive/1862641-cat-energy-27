@@ -2,15 +2,19 @@
   background-color: $color-basic-grey;
 }
 
-.map__wrapper {
-  max-width: 100%;
-  min-height: 362px;
-  position: relative;
-}
-
 .map__iframe {
   border: 0;
-  position: absolute;
   width: 100%;
   min-height: 362px;
+}
+
+@media (min-width: 767px) {
+  .map__wrapper {
+    background-color: $color-basic-grey;
+    min-height: 400px;
+  }
+
+  .map__iframe {
+    min-height: 400px;
+  }
 }

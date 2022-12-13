@@ -46,3 +46,32 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .invite__body {
+    min-height: 400px;
+    position: relative;
+    background-color: $color-basic-grey;
+  }
+
+  .invite__content {
+    padding: 0;
+  }
+
+  .invite__adress {
+    width: 565px;
+    padding: 60px 0 56px 0;
+    position: absolute;
+    top: 25%;
+    z-index: 5;
+    background-color: $color-white;
+  }
+
+  .invite__small-bold {
+    padding-left: 80px;
+  }
+
+  .invite__text {
+    padding-right: 80px;
+  }
+}
+
