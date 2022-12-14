@@ -6,7 +6,7 @@
   padding: 0 20px;
 }
 
-.another-product__list {
+.another-product__wrapper {
   margin-top: 36px;
 }
 
@@ -55,5 +55,19 @@
 
   .another-product__cell {
     margin-right: 51px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .another-product__wrapper {
+    display: flex;
+  }
+
+  .another-product__list {
+    width: 895px;
+  }
+
+  .another-product__aside {
+    width: 245px;
   }
 }
