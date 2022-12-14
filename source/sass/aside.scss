@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width: 280px;
-    min-height: 289px;
+    min-height: 100%;
   }
 
   &::after {
@@ -16,7 +16,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    min-height: 289px;
+    min-height: 100%;
     background-image: url("../img/jpeg/aside-bacground.jpg");
     background-repeat: no-repeat;
     background-position: 20px;
@@ -43,12 +43,15 @@
 
 @media (min-width: 767px) {
   .aside__content {
+    display: flex;
+    align-items: center;
     position: relative;
     margin: 0 auto;
+    min-height: 200px;
+
 
     &::before {
       width: 100%;
-      min-height: 200px;
       left: 0;
     }
 
@@ -57,11 +60,28 @@
       left: 0;
       background-position: 100%;
       background-size: 100%;
-      min-height: 200px;
     }
   }
 
   .aside__wrapper {
+    width: 100%;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aside__picture {
+    padding-left: 93px;
+  }
+
+  .aside__text {
+    text-align: left;
+  }
+  .aside__text-inner {
+    width: 161px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 124px;
   }
 }
