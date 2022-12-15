@@ -78,10 +78,47 @@
   .aside__text {
     text-align: left;
   }
+
   .aside__text-inner {
     width: 161px;
     padding-top: 0;
     padding-left: 0;
     padding-right: 124px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aside__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    min-height: 288px;
+
+
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+
+    &::after {
+      background-image: url("../img/jpeg/aside-background-desktop.jpg");
+    }
+  }
+
+  .aside__wrapper {
+    flex-direction: column;
+  }
+
+  .aside__picture {
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+
+  .aside__text-inner {
+    max-width: 161px;
+    margin: 0 auto;
+    padding-right: 0;
+    text-align: center;
   }
 }
