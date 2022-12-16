@@ -23,6 +23,7 @@
 }
 
 .form__info {
+  width: 100%;
   line-height: 18px;
 }
 
@@ -68,8 +69,9 @@
 }
 
 .form__input {
-  width: 100%;
-  padding: 10px 0;
+  max-width: 548px;
+  flex-grow: 1;
+  padding: 13px 0;
   padding-left: 15px;
   margin-left: 13px;
   border: 1px solid $color-changes-border;
@@ -82,18 +84,22 @@
 
 .form__change-item {
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
   }
 }
 
 .form__textarea {
-  width: 100%;
-  min-height: 150px;
   resize: none;
   border: none;
+  width: 100%;
+  min-height: 150px;
+  padding: 0;
+  padding-top: 9px;
+  padding-left: 15px;
   border-top: 1px solid $color-changes-border;
   border-bottom: 1px solid $color-changes-border;
 }
+
 
 .form__button-wrapper {
   margin-top: 40px;
@@ -149,7 +155,7 @@
   }
 
   .form__title {
-    padding-left: 30px;
+    padding-left: 40px;
   }
 
   .form__tagline {
@@ -162,18 +168,17 @@
     line-height: 30px;
   }
 
-  .form__wrapeer {
-    margin-top: 54px;
-    padding: 0 0 0 0;
-  }
-
-
   .form__fieldset {
     border: none;
     margin: 42px 0;
-    padding: 0 30px;
-    padding-top: 22px;
-    padding-bottom: 19px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+  .form__wrapeer {
+    margin-top: 54px;
+    padding: 0 0 0 0;
   }
 
   .form__fieldset-line {
@@ -182,14 +187,15 @@
     }
   }
 
-  .form__change-wrapper {
-    border: 1px solid $color-border;
-    padding: 30px 27px;
+  .form__wrapper-label {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
   }
 
-  .form__textarea {
-    border: 1px solid $color-changes-border;
-    padding: 10px 19px;
+  .form__change-wrapper {
+    border: 1px solid $color-border;
+    padding: 25px 0 25px 25px;
   }
 
   .form__change-checkbox {
@@ -202,9 +208,15 @@
     flex-basis: 40%;
   }
 
+  .form__textarea {
+    border-top: 0;
+    border-bottom: 0;
+    border: 1px solid $color-changes-border;
+  }
+
   .form__button-wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 
   .form__button {
@@ -215,5 +227,39 @@
   .form__fake {
     height: 38px;
     width: 38px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__title {
+    padding: 0;
+  }
+
+  .form__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 80px;
+  }
+
+  .form__fieldset {
+    max-width: 570px;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .form__fieldset-area {
+    max-width: 1220px;
+  }
+
+  .form__change-checkbox {
+    max-width: 100%;
+  }
+
+  .form__change-item {
+    flex-basis: auto;
+  }
+
+  .form__button {
+    width: 568px;
   }
 }
