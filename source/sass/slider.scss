@@ -6,8 +6,6 @@
 
 .slider__range {
   width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background: inherit;
   position: relative;
@@ -17,7 +15,6 @@
     cursor: pointer;
     width: 40px;
     height: 260px;
-    -webkit-appearance: none;
     background-image: url("../img/svg/curtain.svg");
     background-repeat: no-repeat;
   }
