@@ -1,27 +1,25 @@
-@import "colors.scss";
-@import "another.scss";
-@import "fonts.scss";
-@import "list.scss";
-@import "header.scss";
-@import "burger.scss";
-@import "promo.scss";
-@import "mixins.scss";
-@import "categories.scss";
-@import "advantages.scss";
-@import "example.scss";
-@import "changes.scss";
-@import "invite.scss";
-@import "normalize.scss";
-@import "map.scss";
-@import "footer.scss";
-@import "media-list.scss";
-@import "another-product.scss";
-@import "form.scss";
-@import "aside.scss";
-@import "table.scss";
-@import "slider.scss";
-
-
+@import "./global/colors.scss";
+@import "../sass/global/another.scss";
+@import "./global/fonts.scss";
+@import "../sass/bloks/list.scss";
+@import "../sass/bloks/header.scss";
+@import "../sass/bloks/burger.scss";
+@import "../sass/bloks/index/promo.scss";
+@import "../sass/global/mixins.scss";
+@import "../sass/bloks/index/categories.scss";
+@import "../sass/bloks/index/advantages.scss";
+@import "../sass/bloks/index/example.scss";
+@import "../sass/bloks/index/changes.scss";
+@import "../sass/bloks/invite.scss";
+@import "../sass/bloks/map.scss";
+@import "../sass/bloks/footer.scss";
+@import "../sass/bloks/media-list.scss";
+@import "../sass/bloks/forms/form.scss";
+@import "../sass/bloks/catalog/aside.scss";
+@import "../sass/bloks/index/slider.scss";
 //catalog
-@import "product-card.scss";
+@import "../sass/bloks/catalog/table.scss";
+@import "../sass/bloks/catalog/another-product.scss";
+@import "../sass/bloks/catalog/product-card.scss";
 //catalog
+@import "../sass/global/normalize.scss";
