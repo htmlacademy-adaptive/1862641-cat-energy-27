@@ -1,7 +1,6 @@
 .table__caption {
   text-align: left;
   font-weight: 400;
-  padding-right: 50px;
 }
 
 .table__row {
@@ -19,4 +18,19 @@
 .table__text--another {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: 767px) {
+  .table__caption {
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .table__text {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }

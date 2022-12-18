@@ -1,0 +1,166 @@
+.promo {
+  margin-bottom: 20px;
+}
+
+.promo__body {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 302px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    background-image: url("../img/jpeg/promo-bacground.jpg");
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+}
+
+.promo__main-title {
+  color: $color-white;
+  padding: 27px 0;
+  text-align: center;
+}
+
+.promo__tagline {
+  text-align: center;
+  color: $color-white;
+}
+
+.promo__img {
+  display: block;
+  text-align: center;
+}
+
+.promo__button-wrapper {
+  text-align: center;
+}
+
+.promo__link-button {
+  background-color: $color-main;
+  color: $color-white;
+}
+
+//TABLET
+@media (min-width: 767px) {
+  .promo {
+    margin-top: 62px;
+  }
+
+  .promo__body {
+    max-width: 707px;
+    min-height: 780px;
+
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .promo__wrapper {
+    padding-left: 87px;
+  }
+
+  .promo__main-title {
+    color: $color-black;
+    text-align: left;
+    padding: 0;
+    padding-right: 50px;
+  }
+
+  .promo__tagline {
+    text-align: left;
+    color: $color-black;
+    margin-top: 41px;
+  }
+
+  .promo__img {
+    position: absolute;
+    z-index: -1;
+    right: 60px;
+  }
+
+  .promo__button-wrapper {
+    max-width: 244px;
+    margin-top: 49px;
+    padding: 0;
+    padding-left: 87px;
+  }
+
+  .promo__link-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo {
+    margin: 0;
+  }
+
+  .promo__body {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 694px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50%;
+      min-height: 694px;
+      display: block;
+      position: absolute;
+      top: -162px;
+      left: 50%;
+    }
+
+    &::after {
+      width: 50%;
+      background-image: url("../img/jpeg/promo-bacground-dexktop.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 697px;
+      background-position: right;
+      z-index: -3;
+    }
+  }
+
+  .promo__content {
+    padding: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .promo__wrapper {
+    padding-left: 80px;
+  }
+
+  .promo__main-title {
+    width: 500px;
+    padding: 0;
+    padding-top: 120px;
+  }
+
+  .promo__img {
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    left: 58%;
+    transform: translate(-55%);
+
+    img {
+      max-width: none;
+    }
+  }
+}
+
+//TABLET

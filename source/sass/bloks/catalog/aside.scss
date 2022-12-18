@@ -1,0 +1,124 @@
+.aside__content {
+  min-height: 289px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    min-height: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("../img/jpeg/aside-bacground.jpg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    z-index: -2;
+  }
+}
+
+.aside__wrapper {
+  padding: 0 20px;
+  padding-top: 58px;
+  text-align: center;
+}
+
+.aside__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+}
+
+.aside__text-inner {
+  padding: 0 60px;
+  padding-top: 61px;
+}
+
+@media (min-width: 767px) {
+  .aside__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    min-height: 200px;
+
+
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+
+    &::after {
+      background-image: url("../img/jpeg/aside-bacground-tablet.jpg");
+      left: 0;
+      background-position: 100%;
+      background-size: 100%;
+    }
+  }
+
+  .aside__wrapper {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aside__picture {
+    padding-left: 93px;
+  }
+
+  .aside__text {
+    text-align: left;
+  }
+
+  .aside__text-inner {
+    width: 161px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 124px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aside__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    min-height: 288px;
+
+
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+
+    &::after {
+      background-image: url("../img/jpeg/aside-background-desktop.jpg");
+    }
+  }
+
+  .aside__wrapper {
+    flex-direction: column;
+  }
+
+  .aside__picture {
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+
+  .aside__text-inner {
+    max-width: 161px;
+    margin: 0 auto;
+    padding-right: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,265 @@
+.form {
+  margin-top: 27px;
+}
+
+.form__title {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 26px;
+}
+
+.form__tagline {
+  display: block;
+  padding-top: 37px;
+  text-transform: uppercase;
+}
+
+.form__tagline--line-height {
+  line-height: 18px;
+}
+
+.form__wrapeer {
+  margin-top: 40px;
+}
+
+.form__info {
+  width: 100%;
+  line-height: 18px;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 22px 0;
+  padding: 0 20px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.form__fieldset-line {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1px;
+    background-color: $color-border-d9;
+  }
+}
+
+.form__wrapper-label {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form__flex-label {
+  display: flex;
+  align-items: center;
+}
+
+.form__label-text {
+  text-transform: uppercase;
+}
+
+.form__input {
+  max-width: 548px;
+  flex-grow: 1;
+  padding: 13px 0;
+  padding-left: 15px;
+  margin-left: 13px;
+  border: 1px solid $color-changes-border;
+}
+
+.form__change-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__change-item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__textarea {
+  resize: none;
+  border: none;
+  width: 100%;
+  min-height: 150px;
+  padding: 0;
+  padding-top: 9px;
+  padding-left: 15px;
+  border-top: 1px solid $color-changes-border;
+  border-bottom: 1px solid $color-changes-border;
+}
+
+
+.form__button-wrapper {
+  margin-top: 40px;
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
+
+.form__required-text {
+  text-align: center;
+  margin: 0;
+}
+
+.form__fake {
+  display: block;
+  height: 28px;
+  width: 28px;
+  margin-right: 16px;
+  border: 1px solid $color-changes-border;
+}
+
+.form__fake-radio {
+  border-radius: 100%;
+}
+
+.form__radio:checked + .form__fake {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: $color-main;
+    border-radius: 100%;
+    background-position: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__checkbox:checked + .form__fake {
+  background-image: url("../img/svg/check.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@media (min-width: 767px) {
+  .form {
+    margin-bottom: 72px;
+  }
+
+  .form__title {
+    padding-left: 40px;
+  }
+
+  .form__tagline {
+    display: block;
+    width: 323px;
+    padding-top: 54px;
+  }
+
+  .form__tagline--line-height {
+    line-height: 30px;
+  }
+
+  .form__fieldset {
+    border: none;
+    margin: 42px 0;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+  .form__wrapeer {
+    margin-top: 54px;
+    padding: 0 0 0 0;
+  }
+
+  .form__fieldset-line {
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__wrapper-label {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  .form__change-wrapper {
+    border: 1px solid $color-border;
+    padding: 25px 0 25px 25px;
+  }
+
+  .form__change-checkbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form__change-item {
+    flex-basis: 40%;
+  }
+
+  .form__textarea {
+    border-top: 0;
+    border-bottom: 0;
+    border: 1px solid $color-changes-border;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form__button {
+    width: 282px;
+    margin-right: 64px;
+  }
+
+  .form__fake {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__title {
+    padding: 0;
+  }
+
+  .form__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 80px;
+  }
+
+  .form__fieldset {
+    max-width: 570px;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .form__fieldset-area {
+    max-width: 1220px;
+  }
+
+  .form__change-checkbox {
+    max-width: 100%;
+  }
+
+  .form__change-item {
+    flex-basis: auto;
+  }
+
+  .form__button {
+    width: 568px;
+  }
+}

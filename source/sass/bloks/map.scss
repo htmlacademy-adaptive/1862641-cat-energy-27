@@ -1,0 +1,20 @@
+.map {
+  background-color: $color-basic-grey;
+}
+
+.map__iframe {
+  border: 0;
+  width: 100%;
+  min-height: 362px;
+}
+
+@media (min-width: 767px) {
+  .map__wrapper {
+    background-color: $color-basic-grey;
+    min-height: 400px;
+  }
+
+  .map__iframe {
+    min-height: 400px;
+  }
+}

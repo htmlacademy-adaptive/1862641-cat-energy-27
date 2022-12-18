@@ -1,0 +1,227 @@
+.categories {
+  margin-bottom: 20px;
+}
+
+.categories__item {
+  max-width: 280px;
+  margin: 0 auto;
+  background-color: $color-basic-grey;
+  margin-bottom: 20px;
+  padding: 30px 20px 23px 20px;
+}
+
+.categories__bold-text {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $color-main;
+    border-radius: 100%;
+    margin-right: 19px;
+  }
+
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+  }
+}
+
+.categories__bold-text--slim {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    left: 7px;
+    bottom: 3px;
+    background-image: url("../img/svg/cat-slim.svg");
+  }
+}
+
+.categories__bold-text--pro {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/svg/cat-pro.svg");
+    left: -7px;
+    bottom: 10px;
+  }
+}
+
+.categories__text {
+  padding-top: 22px;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $color-border-d9;
+}
+
+
+.categories__link {
+  display: inline-block;
+  color: $color-black;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 50px;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    position: absolute;
+    top: 33%;
+    right: 0;
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 767px) {
+  .categories {
+    margin-bottom: 0;
+  }
+
+  .categories__content {
+    padding: 0 30px;
+  }
+
+  .categories__item {
+    max-width: 100%;
+    background-color: $color-basic-grey;
+    margin-bottom: 20px;
+    padding: 77px 60px 57px 52px;
+  }
+
+  .categories__bold-text {
+    display: block;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background-color: $color-main;
+      border-radius: 100%;
+      margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+    }
+  }
+
+  .categories__bold-text--slim {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 141px;
+      height: 194px;
+      top: 0;
+      left: 67%;
+      background-image: url("../img/svg/cat-slim-tablet.svg");
+    }
+  }
+
+  .categories__bold-text--pro {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/svg/cat-pro-tablet.svg");
+      top: 55px;
+      left: 60%;
+    }
+  }
+
+  .categories__text {
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-right: 260px;
+    padding-bottom: 52px;
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .categories {
+    padding: 0;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 46.73%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories__text-wrapper {
+    padding: 41px 61px 59px 52px;
+  }
+
+  .categories__bold-text {
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: $color-main;
+      border-radius: 100%;
+      margin-right: 62px;
+    }
+
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .categories__bold-text--slim {
+    &::after {
+      background-image: url("../img/svg/cat-slim-desktop.svg");
+      top: -5px;
+      left: 15px;
+    }
+  }
+
+  .categories__bold-text--pro {
+    &::after {
+      background-image: url("../img/svg/cat-pro-desktop.svg");
+      top: 20px;
+      left: -18px;
+    }
+  }
+
+  .categories__text {
+    padding-top: 39px;
+    padding-right: 0;
+    padding-bottom: 27px;
+  }
+}
