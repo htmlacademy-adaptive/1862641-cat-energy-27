@@ -3,7 +3,7 @@
 }
 
 .promo__body {
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   min-height: 302px;
@@ -16,10 +16,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    background-position: 50%;
   }
 
   &::after {
     background-image: url("../img/jpeg/promo-bacground.jpg");
+    background-color: $color-main;
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: -2;
   }
