@@ -9,7 +9,7 @@
   appearance: none;
   background: inherit;
   position: relative;
-  -webkit-appearance: none; /* stylelint-disable-line */
+  -webkit-appearance: none; /* stylelint-disable-line */ //Стайлинт ругается на браузерный префиксы//
   -moz-appearance: none; /* stylelint-disable-line */
   appearance: none; /* stylelint-disable-line */
   z-index: 5;
