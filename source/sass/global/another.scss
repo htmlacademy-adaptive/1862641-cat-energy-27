@@ -73,6 +73,14 @@ img {
   background-color: $color-main;
   color: $color-white;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-main-alt;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 .content {
@@ -145,6 +153,19 @@ img {
 
 .button-page {
   border: none;
+}
+
+.main-link,
+.logo,
+.footer__logo,
+.link {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 //TABLET

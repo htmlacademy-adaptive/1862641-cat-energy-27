@@ -1,19 +1,22 @@
-.burger__button {
+.burger {
+  display: block;
   border: 0;
   background-color: inherit;
   width: 24px;
-  height: 16px;
+  height: 18px;
   position: relative;
   cursor: pointer;
+  transition: 0.5s;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     right: 0;
     background-color: $color-black;
+    transition: 0.5s;
   }
 
   &::before {
@@ -28,8 +31,8 @@
 .burger__line {
   position: absolute;
   width: 24px;
-  top: 7px;
+  top: 8px;
   right: 0;
-  height: 1.5px;
+  height: 2px;
   background-color: $color-black;
 }

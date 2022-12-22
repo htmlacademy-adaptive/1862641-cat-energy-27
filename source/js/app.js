@@ -1,10 +1,10 @@
-const burger = document.querySelector('.burger__button');
+const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__menu ');
 const range = document.querySelector('.slider__range')
 const rangeBeforeImg = document.querySelector ('.example__picture-before');
 
 burger.addEventListener('click', function(event){
-    menu.classList.toggle('header__menu--active')
+  burger.classList.toggle('header__active')
 });
 
 document.addEventListener('DOMContentLoaded', function(){

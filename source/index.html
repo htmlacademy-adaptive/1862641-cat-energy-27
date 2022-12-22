@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,21 +44,21 @@
         <div class="header__content">
           <nav class="header__nav">
 
-            <picture class="header__logo logo">
-              <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)"></source>
-              <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)"></source>
-              <img src="img/svg/logo-mobile.svg" alt="Логотип интернет-магазина Cat Enetrgy.">
-            </picture>
+            <a href="index.html">
+              <picture class="header__logo logo">
+                <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)"></source>
+                <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)"></source>
+                <img src="img/svg/logo-mobile.svg" alt="Логотип интернет-магазина Cat Enetrgy.">
+              </picture>
+            </a>
 
             <picture class="header__alt-logo">
               <img src="img/svg/alt-logo.svg" alt="Cat Enetrgy.">
             </picture>
 
-            <div class="header__burger burger">
-              <button type="button" class="burger__button">
-                <span class="burger__line"></span>
+              <button type="button" class="header__burger burger">
+                <span class="header__line burger__line"></span>
               </button>
-            </div>
 
             <div class="header__menu">
               <ul class="header__list list">
@@ -330,7 +331,7 @@
 
                 <li class="media-list__item">
                   <a href="#" class="media-list__link">
-                    <svg height="19" width="24"><use xlink:href="#youtube"></use></svg>
+                    <svg  height="19" width="24"><use xlink:href="#youtube"></use></svg>
                   </a>
 
                 </li>
