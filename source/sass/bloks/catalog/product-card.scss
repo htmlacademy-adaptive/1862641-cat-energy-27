@@ -120,8 +120,10 @@
 
   .product-card__img {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     bottom: 0;
-    transform: translate(5%);
+    margin: 0;
   }
 
   .product-card__more {
@@ -185,11 +187,6 @@
       transform: translate(-50%);
       z-index: -1;
     }
-  }
-
-  .product-card__picture {
-    left: 50%;
-    transform: translate(-60%);
   }
 
   .product-card__more {
