@@ -1,11 +1,11 @@
 .burger {
   display: block;
   border: 0;
-  background-color: inherit;
   width: 24px;
   height: 18px;
   position: relative;
   cursor: pointer;
+  background-color: inherit;
   transition: 0.5s;
 
   &::before,
