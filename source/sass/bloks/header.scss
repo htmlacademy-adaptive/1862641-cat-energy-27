@@ -10,25 +10,30 @@
   flex-wrap: wrap;
   position: relative;
   z-index: 5;
-  padding-bottom: 13px;
   padding-top: 14px;
+  padding-bottom: 14px;
 }
-
 
 .header__logo {
   margin-left: 20px;
 }
 
 .header__menu {
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 5;
   top: 55px;
   background-color: $color-white;
-  opacity: 0;
-  visibility: hidden;
   transition: 0.5s;
   padding-top: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__menu--no-js {
+  position: static;
+  opacity: 1;
+  visibility: visible;
 }
 
 .header__burger {
@@ -37,13 +42,12 @@
 
 .header__item {
   border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
 }
 
 .header__link {
   width: 100%;
   display: block;
-  padding: 22px 0;
+  padding: 24px 0;
   text-align: center;
   color: $color-black;
   text-transform: uppercase;

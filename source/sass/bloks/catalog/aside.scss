@@ -19,8 +19,13 @@
     min-height: 100%;
     background-image: url("../img/jpeg/aside-bacground.jpg");
     background-repeat: no-repeat;
-    background-position: 20px;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpeg/aside-bacground-x2.jpg");
+      background-position: 560px auto;
+      background-size: cover;
+    }
   }
 }
 
@@ -37,8 +42,9 @@
 }
 
 .aside__text-inner {
-  padding: 0 60px;
   padding-top: 61px;
+  max-width: 161px;
+  margin: 0 auto;
 }
 
 @media (min-width: 767px) {
@@ -60,6 +66,10 @@
       left: 0;
       background-position: 100%;
       background-size: 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpeg/aside-bacground-tablet-x2.jpg");
+      }
     }
   }
 
@@ -68,7 +78,6 @@
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   .aside__picture {
@@ -80,10 +89,10 @@
   }
 
   .aside__text-inner {
-    width: 161px;
     padding-top: 0;
-    padding-left: 0;
     padding-right: 124px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -103,6 +112,10 @@
 
     &::after {
       background-image: url("../img/jpeg/aside-background-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpeg/aside-background-desktop-x2.jpg");
+      }
     }
   }
 

@@ -20,11 +20,15 @@
   }
 
   &::after {
-    background-image: url("../img/jpeg/promo-bacground.jpg");
+    background-image: url("../img/jpeg/promo-background.jpg");
     background-color: $color-main;
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpeg/promo-background-x2.jpg");
+    }
   }
 }
 
@@ -129,11 +133,15 @@
 
     &::after {
       width: 50%;
-      background-image: url("../img/jpeg/promo-bacground-dexktop.jpg");
+      background-image: url("../img/jpeg/promo-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: 100% 697px;
       background-position: right;
       z-index: -3;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpeg/promo-bacground-dekstop-x2.jpg");
+      }
     }
   }
 

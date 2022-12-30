@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="preload">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -56,11 +59,11 @@
               <img src="img/svg/alt-logo.svg" alt="Cat Enetrgy.">
             </picture>
 
-              <button type="button" class="header__burger burger">
-                <span class="header__line burger__line"></span>
-              </button>
+            <button type="button" class="header__burger burger">
+              <span class="header__line burger__line"></span>
+            </button>
 
-            <div class="header__menu">
+            <div class="header__menu header__menu--no-js">
               <ul class="header__list list">
                 <li class="header__item list__item">
                   <a href="#" class="header__link list__link main-link header__check header__link-index header__check-index">Главная</a>
@@ -98,9 +101,9 @@
             </div>
 
             <picture class="promo__img">
-              <source srcset="img/png/catenergy-promo-desktop.png" media="(min-width:1440px)" min-width="552" min-height="499px"></source>
-              <source srcset="img/png/catenergy-promo-tablet.png" media="(min-width:767px)"></source>
-              <img class="img" src="img/png/catenergy-promo.png" alt="Cat Energy Pro." min-width="280" min-height="270px">
+              <source srcset="img/png/catenergy-promo-desktop.png 1x, img/png/index-retino/catenergy-promo-desktop@2x.png 2x" media="(min-width:1440px)" min-width="552" min-height="499px"></source>
+              <source srcset="img/png/catenergy-promo-tablet.png 1x, img/png/index-retino/catenergy-promo-tablet@2x.png 2x" media="(min-width:767px)"></source>
+              <img class="img" src="img/png/catenergy-promo.png " srcset="img/png/catenergy-promo.png 1x, img/png/index-retino/catenergy-promo@2x.png 2x" alt="Cat Energy Pro." min-width="280" min-height="270px">
             </picture>
 
             <div class="promo__button-wrapper">
@@ -259,15 +262,15 @@
             <div class="example__before-after">
               <div class="example__picture example__picture-before">
                 <picture >
-                  <source srcset="img/png/cat-before-1x.png" media="(min-width:767px)" width="560" height="512"></source>
-                  <img class="example__img example__img-before" src="img/png/cat-before-1x.png" alt="До." width="280" height="256">
+                  <source srcset="img/png/cat-before-tablet.png 1x, img/png/index-retino/cat-before-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512"></source>
+                  <img class="example__img example__img-before" src="img/png/cat-before.png" srcset="img/png/cat-before.png 1x, img/png/index-retino/cat-before@2x.png 2x" alt="До." width="280" height="256">
                 </picture>
               </div>
 
               <div class="example__picture example__picture-after">
                 <picture>
-                  <source srcset="img/png/cat-after-1x.png" media="(min-width:767px)" width="560" height="512"></source>
-                  <img class="example__img example__img-after" src="img/png/cat-after-1x.png" alt="После." width="280" height="256">
+                  <source srcset="img/png/cat-after-tablet.png 1x, img/png/index-retino/cat-after-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512"></source>
+                  <img class="example__img example__img-after" src="img/png/cat-after.png" srcset="img/png/cat-after.png 1x, img/png/index-retino/cat-after@2x.png 2x" alt="После." width="280" height="256">
                 </picture>
               </div>
 
