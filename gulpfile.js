@@ -8,6 +8,7 @@ import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import csso from 'postcss-csso';
 import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 
 
 // Styles
@@ -54,6 +55,14 @@ export const scripts = () => {
   .pipe(gulp.dest('build/js'))
 }
 //script
+
+//images
+export const images = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+}
+//images
 
 // Watcher
 
