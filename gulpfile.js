@@ -1,9 +1,13 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import htmlmin from 'gulp-htmlmin';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import rename from 'gulp-rename';
+import csso from 'postcss-csso';
+import terser from 'gulp-terser';
 
 
 // Styles
@@ -13,18 +17,28 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+//html
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest('build'))
+}
+//html
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: './source'
+      baseDir: './build'
     },
     cors: true,
     notify: false,
@@ -32,6 +46,14 @@ const server = (done) => {
   });
   done();
 }
+
+//script
+export const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'))
+}
+//script
 
 // Watcher
 
@@ -42,5 +64,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
