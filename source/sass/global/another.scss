@@ -15,6 +15,12 @@ img {
   max-width: 100%;
 }
 
+a,
+button,
+input {
+  outline: none;
+}
+
 .inner {
   padding: 0 20px;
 }
@@ -27,7 +33,7 @@ img {
   margin: 0;
 }
 
-.body {
+body {
   font-family: "Lato", sans-serif, "Arial", sans-serif;
   font-size: 16px;
 }
@@ -78,6 +84,7 @@ img {
   background-color: $color-main;
   color: $color-white;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: $color-main-alt;
@@ -162,7 +169,6 @@ img {
 
 .main-link,
 .logo,
-.footer__logo,
 .link {
   &:hover {
     opacity: 0.7;
@@ -170,6 +176,10 @@ img {
 
   &:active {
     opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.7;
   }
 }
 
@@ -212,6 +222,10 @@ img {
     line-height: 36px;
   }
 
+  .media-svg {
+    fill: red;
+  }
+
   .title-line {
     position: relative;
 
@@ -233,6 +247,15 @@ img {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
+
+    &:focus {
+      box-shadow:0 0 10px  0 $color-black;
+    }
+  }
+
+  .svg svg:hover{
+    stroke: red;
+    fill: red;
   }
 
   .bold-text {
