@@ -223,7 +223,16 @@ body {
   }
 
   .media-svg {
-    fill: red;
+    fill: #666666;
+
+    &:hover,
+    &:focus {
+      fill: $color-main;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .title-line {

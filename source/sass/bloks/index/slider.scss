@@ -23,6 +23,14 @@
     height: 260px;
     background-image: url("../img/svg/curtain.svg");
     background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("../img/svg/curtain-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/svg/curtain-active.svg");
+    }
   }
 }
 
