@@ -18,6 +18,12 @@
   color: $color-black;
   margin: 0 20px;
   text-align: left;
+
+  &:hover {
+    .media-svg {
+      fill: $color-main;
+    }
+  }
 }
 
 @media (min-width: 767px) {
