@@ -21,15 +21,20 @@
     appearance: none; /* stylelint-disable-line */
     width: 40px;
     height: 260px;
-    background-image: url("../img/svg/curtain.svg");
+    background-image: url("../img/png/slider-default.png");
     background-repeat: no-repeat;
-
-    &:hover {
-      background-image: url("../img/svg/curtain-hover.svg");
-    }
+    background-position: 50%;
 
     &:active {
-      background-image: url("../img/svg/curtain-active.svg");
+      opacity: 0.7;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::-webkit-slider-thumb {
+      background-repeat: no-repeat;
+      background-image: url("../img/png/slider-hover.png");
     }
   }
 }
@@ -39,7 +44,15 @@
     &::-webkit-slider-thumb {
       width: 40px;
       height: 512px;
-      background-image: url("../img/svg/curtain-tablet.svg");
+      background-image: url("../img/png/slider-tablet-default.png");
+    }
+
+    &:hover,
+    &:focus {
+      &::-webkit-slider-thumb {
+        background-repeat: no-repeat;
+        background-image: url("../img/png/slider-tablet-hover.png");
+      }
     }
   }
 }

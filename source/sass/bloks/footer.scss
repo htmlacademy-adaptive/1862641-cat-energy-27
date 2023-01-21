@@ -11,6 +11,17 @@
   margin-bottom: 20px;
 }
 
+.footer__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .footer__academy-link {
   display: flex;
   align-items: center;
@@ -19,7 +30,8 @@
   margin: 0 20px;
   text-align: left;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .media-svg {
       fill: $color-main;
     }

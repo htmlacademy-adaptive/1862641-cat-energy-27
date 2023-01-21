@@ -222,18 +222,18 @@ body {
     line-height: 36px;
   }
 
-  .media-svg {
-    fill: #666666;
+    .media-svg {
+      fill: #666666;
 
-    &:hover,
-    &:focus {
-      fill: $color-main;
-    }
+      &:hover,
+      &:focus {
+        fill: $color-main;
+      }
 
-    &:active {
-      opacity: 0.5;
+      &:active {
+        opacity: 0.5;
+      }
     }
-  }
 
   .title-line {
     position: relative;
