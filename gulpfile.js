@@ -74,7 +74,7 @@ const optimizeImages = () => {
   // WebP
 
   const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}', '!source/img/favicons')
+  return gulp.src('source/img/png/*','source/img/jpeg/*', '!source/img/favicons')
   .pipe(squoosh({
   webp: {}
   }))

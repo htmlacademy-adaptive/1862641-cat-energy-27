@@ -9,3 +9,11 @@
     margin-right: 25px;
   }
 }
+
+.media-list__link {
+  &:focus {
+    .media-svg {
+      fill: $color-main;
+    }
+  }
+}

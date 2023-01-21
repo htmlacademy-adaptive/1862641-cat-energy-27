@@ -61,6 +61,10 @@
 .product-card__button--more {
   color: $color-dark-grey;
   background-color: $color-basic-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: 767px) {
