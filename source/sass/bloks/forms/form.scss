@@ -93,6 +93,9 @@
     opacity: 0.5;
   }
 }
+.form__number{
+  -moz-appearance: textfield;
+}
 
 .form__number::-webkit-inner-spin-button {
   -webkit-appearance: none;
