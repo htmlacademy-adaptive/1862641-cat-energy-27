@@ -82,23 +82,24 @@
   }
 
   &:focus {
-    border-color: $color-dark-grey ;
+    border-color: $color-dark-grey;
   }
 
   &:invalid {
-    border-color: $color-error ;
+    border-color: $color-error;
   }
 
   &:disabled {
     opacity: 0.5;
   }
 }
-.form__number{
-  -moz-appearance: textfield;
+
+.form__number {
+  -moz-appearance: textfield; /* stylelint-disable-line */
 }
 
 .form__number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* stylelint-disable-line */
 }
 
 .form__change-wrapper {
@@ -150,17 +151,17 @@
   border-radius: 100%;
 }
 
-.form__radio{
+.form__radio {
   &:hover {
     opacity: 0.5;
   }
 }
 
-.form__radio:hover + .form__fake  {
+.form__radio:hover + .form__fake {
   border-color: $color-black;
 }
 
-.form__radio:focus + .form__fake  {
+.form__radio:focus + .form__fake {
   border-color: $color-black;
 }
 
@@ -181,11 +182,11 @@
   }
 }
 
-.form__checkbox:hover + .form__fake  {
+.form__checkbox:hover + .form__fake {
   border-color: $color-black;
 }
 
-.form__checkbox:focus + .form__fake  {
+.form__checkbox:focus + .form__fake {
   border-color: $color-black;
 }
 

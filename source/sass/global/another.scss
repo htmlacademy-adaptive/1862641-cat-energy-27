@@ -34,7 +34,7 @@ input {
 }
 
 body {
-  font-family: "Lato", sans-serif, "Arial", sans-serif;
+  font-family: "Lato", sans-serif, "Arial";
   font-size: 16px;
 }
 
@@ -222,18 +222,18 @@ body {
     line-height: 36px;
   }
 
-    .media-svg {
-      fill: #666666;
+  .media-svg {
+    fill: #666666;
 
-      &:hover,
-      &:focus {
-        fill: $color-main;
-      }
-
-      &:active {
-        opacity: 0.5;
-      }
+    &:hover,
+    &:focus {
+      fill: $color-main;
     }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 
   .title-line {
     position: relative;
@@ -258,13 +258,8 @@ body {
     line-height: 20px;
 
     &:focus {
-      box-shadow:0 0 10px  0 $color-black;
+      box-shadow: 0 0 10px 0 $color-black;
     }
-  }
-
-  .svg svg:hover{
-    stroke: red;
-    fill: red;
   }
 
   .bold-text {
