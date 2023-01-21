@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="prelod" href="fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -50,8 +50,8 @@
 
             <a href="index.html" class="header__logo-link">
               <picture class="header__logo logo">
-                <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)"></source>
-                <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)"></source>
+                <source srcset="img/svg/logo-desktop.svg" media="(min-width:1440px)">
+                <source srcset="img/svg/logo-tablet.svg" media="(min-width:767px)">
                 <img class="header__img" src="img/svg/logo-mobile.svg" alt="Логотип интернет-магазина Cat Enetrgy.">
               </picture>
             </a>
@@ -102,13 +102,12 @@
             </div>
 
             <picture class="promo__img">
-              <source type="image/webp" srcset="img/webp/catenergy-promo-desktop.webp x1, img/webp/retino/catenergy-promo-desktop@2x.webp x2" media="(min-width:1440px)"></source>
-              <source type="image/webp" srcset="img/webp/catenergy-promo-tablet.webp x1, img/retino/webp/catenergy-promo-tablet@2x.webp x2" media="(min-width:767px)"></source>
-              <source type="image/webp" srcset="img/webp/catenergy-promo.webp x1, img/webp/retino/catenergy-promo@2x.webp x2"></source>
-              <source srcset="img/png/catenergy-promo-desktop.png 1x, img/png/index-retino/catenergy-promo-desktop@2x.png 2x" media="(min-width:1440px)" min-width="552" min-height="499px"></source>
-              <source srcset="img/png/catenergy-promo-tablet.png 1x, img/png/index-retino/catenergy-promo-tablet@2x.png 2x" media="(min-width:767px)"></source>
-              <img class="img" src="img/png/catenergy-promo.png " srcset="img/png/catenergy-promo.png 1x, img/png/index-retino/catenergy-promo@2x.png 2x" alt="Cat Energy Pro." min-width="280" min-height="270px">
-
+              <source type="image/webp" srcset="img/webp/catenergy-promo-desktop.webp 1x, img/webp/retino/catenergy-promo-desktop@2x.webp 2x" media="(min-width:1440px)" width="552" height="499">
+              <source type="image/webp" srcset="img/webp/catenergy-promo-tablet.webp 1x, img/webp/retino/catenergy-promo-tablet@2x.webp 2x" media="(min-width:767px)" width="709" height="609">
+              <source type="image/webp" srcset="img/webp/catenergy-promo.webp 1x, img/webp/retino/catenergy-promo@2x.webp 2x" width="280" height="270">
+              <source srcset="img/png/catenergy-promo-desktop.png 1x, img/png/index-retino/catenergy-promo-desktop@2x.png 2x" media="(min-width:1440px)" width="552" height="499" >
+              <source srcset="img/png/catenergy-promo-tablet.png 1x, img/png/index-retino/catenergy-promo-tablet@2x.png 2x" media="(min-width:767px)" width="709" height="609">
+              <img class="img" src="img/png/catenergy-promo.png " srcset="img/png/catenergy-promo.png 1x, img/png/index-retino/catenergy-promo@2x.png 2x" alt="Cat Energy Pro." width="280" height="270">
             </picture>
 
             <div class="promo__button-wrapper">
@@ -267,21 +266,21 @@
             <div class="example__before-after">
               <div class="example__picture example__picture-before">
                 <picture >
-                  <source srcset="img/png/cat-before-tablet.png 1x, img/png/index-retino/cat-before-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512"></source>
+                  <source srcset="img/png/cat-before-tablet.png 1x, img/png/index-retino/cat-before-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512">
                   <img class="example__img example__img-before" src="img/png/cat-before.png" srcset="img/png/cat-before.png 1x, img/png/index-retino/cat-before@2x.png 2x" alt="До." width="280" height="256">
                 </picture>
               </div>
 
               <div class="example__picture example__picture-after">
                 <picture>
-                  <source srcset="img/png/cat-after-tablet.png 1x, img/png/index-retino/cat-after-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512"></source>
+                  <source srcset="img/png/cat-after-tablet.png 1x, img/png/index-retino/cat-after-tablet@2x.png 2x" media="(min-width:767px)" width="560" height="512">
                   <img class="example__img example__img-after" src="img/png/cat-after.png" srcset="img/png/cat-after.png 1x, img/png/index-retino/cat-after@2x.png 2x" alt="После." width="280" height="256">
                 </picture>
               </div>
 
               <div class="example__slider slider">
                 <label class="slider__label" for="range">
-                  <input type="range" class="slider__range">
+                  <input type="range" class="slider__range" id="range">
                 </label>
               </div>
             </div>
@@ -290,11 +289,12 @@
       </section>
 
       <section class="invite">
+        <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="invite__body invite__body-index">
           <div class="invite__content content">
             <div class="invite__adress">
               <b class="invite__small-bold small-bold ">
-                приглашаем к сотрудничеству дилеров!
+                Приглашаем к сотрудничеству дилеров!
               </b>
 
               <p class="invite__text text-page">
