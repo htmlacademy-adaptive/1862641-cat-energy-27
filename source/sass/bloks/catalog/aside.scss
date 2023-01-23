@@ -1,6 +1,7 @@
 .aside__content {
   min-height: 289px;
   position: relative;
+  margin-top: 30px;
 
   &::before {
     content: "";
@@ -42,7 +43,7 @@
 }
 
 .aside__text-inner {
-  padding-top: 61px;
+  padding-top: 50px;
   max-width: 161px;
   margin: 0 auto;
 }

@@ -1,23 +1,19 @@
-.another-product {
-  margin-top: 13px;
-}
-
 .another-product__content {
   padding: 0 20px;
 }
 
 .another-product__wrapper {
-  margin-top: 36px;
+  margin-top: 8px;
 }
 
 .another-product__item {
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 19px;
   border-top: 1px solid $color-changes-border;
 }
 
 .another-product__caption {
-  margin-bottom: 13px;
+  margin-bottom: 2px;
 }
 
 .another-product__table {
@@ -27,6 +23,7 @@
 
 @media (min-width: 767px) {
   .another-product {
+    margin-top: -25px;
     margin-bottom: 76px;
   }
 
@@ -38,14 +35,16 @@
     padding-left: 38px;
   }
 
-  .another-product__list {
-    padding: 0 38px;
+  .another-product__wrapper {
+    margin-top: 80px;
   }
 
   .another-product__item {
-    padding: 0;
+    padding: 0 38px;
     padding-top: 25px;
-    padding-bottom: 27px;
+    padding-bottom: 30px;
+    border-right: 1px solid $color-changes-border;
+    border-left: 1px solid $color-changes-border;
 
     &:last-child {
       border-bottom: 1px solid $color-changes-border;
@@ -57,14 +56,54 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .another-product__cell {
     margin-right: 51px;
   }
+
+  .another-product__button {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .another-product {
+    margin-top: 15px;
+    margin-bottom: 120px;
+  }
+
+  .another-product__wrapper {
+    margin-top: 75px;
+    align-items: center;
+  }
+
+  .another-product__item {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+  }
+
+  .another-product__table {
+    justify-content: start;
+    align-items: baseline;
+    margin-top: 11px;
+  }
+
+  .another-product__caption {
+    min-width: 200px;
+    text-align: left;
+    padding-right: 120px;
+  }
+
+  .another-product__cell {
+    min-width: 140px;
+    text-align: left;
+    flex-grow: 1;
+    padding-right: 55px;
+  }
+
   .another-product__title {
     padding: 0;
   }
@@ -72,6 +111,7 @@
   .another-product__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
   }
 
   .another-product__description {
