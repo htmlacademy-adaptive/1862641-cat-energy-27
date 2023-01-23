@@ -1,6 +1,5 @@
 .media-list {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -14,6 +13,32 @@
   &:focus {
     .media-svg {
       fill: $color-main;
+    }
+  }
+}
+
+@media (min-width:767px) {
+  .media-list {
+    margin-left: 29px;
+    padding-top: 5px;
+  }
+
+  .media-list__item {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+}
+
+@media (min-width:1440px) {
+  .media-list {
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .media-list__item {
+    &:not(:last-child) {
+      margin-right: 29px;
     }
   }
 }

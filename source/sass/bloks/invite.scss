@@ -1,6 +1,9 @@
+.invite {
+  margin-top: 40px;
+}
+
 .invite__content {
   padding: 20px 0;
-  padding-left: 20px;
 }
 
 .invite__adress {
@@ -11,11 +14,13 @@
 
 .invite__text {
   line-height: 20px;
+  margin-left: 15px;
 }
 
 @media (min-width: 767px) {
+
   .invite__content {
-    padding: 30px 0;
+    padding: 50px 0;
   }
 
   .invite__body {
@@ -32,26 +37,31 @@
 
   .invite__small-bold {
     width: 130px;
-    padding-left: 30px;
+    padding-left: 40px;
     line-height: 26px;
   }
 
   .invite__text {
     width: 160px;
-    padding-right: 30px;
+    padding-right: 37px;
     text-align: right;
   }
 
   .invite__city-name {
     display: inline-block;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: 1440px) {
+  .invite {
+    margin: 0;
+  }
+
   .invite__body {
     min-height: 400px;
     position: relative;
+    margin-top: -5px;
     background-color: $color-basic-grey;
   }
 
@@ -61,9 +71,9 @@
 
   .invite__adress {
     width: 565px;
-    padding: 60px 0 56px 0;
+    padding: 54px 0 56px 0;
     position: absolute;
-    top: 25%;
+    top: 20%;
     z-index: 5;
     background-color: $color-white;
   }
@@ -73,6 +83,7 @@
   }
 
   .invite__text {
-    padding-right: 80px;
+    padding-right: 75px;
+    text-align: left;
   }
 }
