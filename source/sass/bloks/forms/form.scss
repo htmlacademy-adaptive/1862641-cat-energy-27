@@ -1,25 +1,21 @@
 .form {
-  margin-top: 27px;
+  margin-top: 30px;
 }
 
 .form__title {
   margin: 0;
-  padding-left: 20px;
   line-height: 26px;
 }
 
 .form__tagline {
   display: block;
   padding-top: 37px;
+  padding-right: 50px;
   text-transform: uppercase;
 }
 
 .form__tagline--line-height {
   line-height: 18px;
-}
-
-.form__wrapeer {
-  margin-top: 40px;
 }
 
 .form__info {
@@ -30,8 +26,8 @@
 .form__fieldset {
   border: none;
   margin: 22px 0;
-  padding: 0 20px;
-  padding-top: 22px;
+  padding: 0;
+  padding-top: 20px;
   padding-bottom: 19px;
 }
 

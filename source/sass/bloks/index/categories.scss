@@ -6,7 +6,7 @@
   max-width: 280px;
   margin: 0 auto;
   background-color: $color-basic-grey;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 30px 20px 23px 20px;
 }
 
@@ -60,7 +60,7 @@
 
 .categories__text {
   padding-top: 22px;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   padding-bottom: 23px;
   border-bottom: 1px solid $color-border-d9;
 }
@@ -69,10 +69,9 @@
 .categories__link {
   display: inline-block;
   color: $color-black;
+  text-transform: uppercase;
   position: relative;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 50px;
+  padding-right: 51px;
 
   &::after {
     content: "";
@@ -98,8 +97,8 @@
   .categories__item {
     max-width: 100%;
     background-color: $color-basic-grey;
-    margin-bottom: 20px;
-    padding: 77px 60px 57px 52px;
+    margin-bottom: 25px;
+    padding: 82px 60px 57px 52px;
   }
 
   .categories__bold-text {
@@ -131,8 +130,8 @@
       position: absolute;
       width: 141px;
       height: 194px;
-      top: 0;
-      left: 67%;
+      top: 5px;
+      left: 72%;
       background-image: url("../img/svg/cat-slim-tablet.svg");
     }
   }
@@ -145,7 +144,7 @@
       width: 268px;
       height: 112px;
       background-image: url("../img/svg/cat-pro-tablet.svg");
-      top: 55px;
+      top: 58px;
       left: 60%;
     }
   }
@@ -162,6 +161,7 @@
 @media (min-width: 1440px) {
   .categories {
     padding: 0;
+    margin-top: 0;
   }
 
   .categories__list {
@@ -176,7 +176,7 @@
   }
 
   .categories__text-wrapper {
-    padding: 41px 61px 59px 52px;
+    padding: 47px 61px 59px 52px;
   }
 
   .categories__bold-text {
@@ -223,5 +223,9 @@
     padding-top: 39px;
     padding-right: 0;
     padding-bottom: 27px;
+  }
+
+  .categories__link {
+    text-transform: uppercase;
   }
 }

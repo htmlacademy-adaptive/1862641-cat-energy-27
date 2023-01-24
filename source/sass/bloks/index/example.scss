@@ -29,6 +29,7 @@
 .example__before-after {
   position: relative;
   min-height: 256px;
+  margin-top: 19px;
 }
 
 .example__picture {
@@ -60,7 +61,8 @@
 @media (min-width: 767px) {
   .example {
     margin: 0;
-    padding-top: 43px;
+    padding-top: 0;
+    padding-bottom: 69px;
   }
 
   .example__body {
@@ -73,12 +75,16 @@
 
   .example__content {
     padding: 0 30px;
-    padding-top: 25px;
+    padding-top: 20px;
+  }
+
+  .example__text {
+    padding-top: 22px;
   }
 
   .example__changes {
-    margin-top: 54px;
-    margin-bottom: 91px;
+    margin-top: 49px;
+    margin-bottom: 100px;
   }
 
   .example__before-after {
@@ -104,9 +110,13 @@
 }
 
 @media (min-width: 1440px) {
+  .example {
+    padding: 0;
+  }
+
   .example__body {
     &::after {
-      min-height: 462px;
+      min-height: 450px;
       top: 25%;
       background-color: $color-example-bg;
     }
@@ -120,6 +130,10 @@
 
   .example__wrapper {
     max-width: 436px;
+  }
+
+  .example__changes {
+    margin-top: 65px;
   }
 
   .example__main-title {

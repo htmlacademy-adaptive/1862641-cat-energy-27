@@ -88,7 +88,17 @@
   }
 
   .header__nav {
-    padding-top: 26px;
+    padding: 0;
+  }
+
+  .header__menu {
+    padding: 0;
+    flex-shrink: 1;
+    width: auto;
+    position: static;
+    z-index: 5px;
+    opacity: 1;
+    visibility: visible;
   }
 
 
@@ -103,15 +113,6 @@
   .header__logo {
     margin: 0;
     flex-basis: 200px;
-  }
-
-  .header__menu {
-    flex-shrink: 1;
-    width: auto;
-    position: static;
-    z-index: 5px;
-    opacity: 1;
-    visibility: visible;
   }
 
   .header__list {
@@ -139,6 +140,10 @@
 
 //DESKTOP
 @media (min-width: 1440px) {
+  .header {
+    padding-top: 45px;
+  }
+
   .header__content {
     max-width: 1220px;
     margin: 0 auto;
@@ -146,6 +151,10 @@
 
   .header__menu {
     background-color: inherit;
+  }
+
+  .header__nav {
+    padding: 0;
   }
 
   .header__list {

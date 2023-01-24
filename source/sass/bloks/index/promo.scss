@@ -34,13 +34,15 @@
 
 .promo__main-title {
   color: $color-white;
-  padding: 27px 0;
+  padding: 27px 0 12px 0;
   text-align: center;
 }
 
 .promo__tagline {
   text-align: center;
   color: $color-white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .promo__img {
@@ -50,6 +52,7 @@
 
 .promo__button-wrapper {
   text-align: center;
+  margin-top: 4px;
 }
 
 .promo__link-button {
@@ -60,7 +63,7 @@
 //TABLET
 @media (min-width: 767px) {
   .promo {
-    margin-top: 62px;
+    margin-top: 55px;
   }
 
   .promo__body {
@@ -94,20 +97,24 @@
   .promo__img {
     position: absolute;
     z-index: -1;
-    right: 60px;
+    right: -5px;
+    bottom: -33px;
   }
 
   .promo__button-wrapper {
-    max-width: 244px;
-    margin-top: 49px;
+    max-width: 240px;
+    margin-top: 39px;
     padding: 0;
-    padding-left: 87px;
+    padding-left: 92px;
   }
 
   .promo__link-button {
     width: 100%;
+    padding: 15px 0;
   }
 }
+//TABLET
+
 
 @media (min-width: 1440px) {
   .promo {
@@ -118,13 +125,13 @@
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    min-height: 694px;
+    min-height: 650px;
 
     &::before,
     &::after {
       content: "";
       width: 50%;
-      min-height: 694px;
+      min-height: 705px;
       display: block;
       position: absolute;
       top: -162px;
@@ -158,20 +165,28 @@
   .promo__main-title {
     width: 500px;
     padding: 0;
-    padding-top: 120px;
+    padding-top: 95px;
   }
 
   .promo__img {
     position: absolute;
     z-index: 0;
-    top: 20px;
-    left: 58%;
+    top: 15px;
+    left: 59.5%;
     transform: translate(-55%);
 
     img {
       max-width: none;
     }
   }
-}
 
-//TABLET
+  .promo__button-wrapper {
+    margin-top: 50px;
+    padding-left: 82px;
+  }
+
+  .promo__link-button {
+    width: 240px;
+    padding: 17px 0;
+  }
+}

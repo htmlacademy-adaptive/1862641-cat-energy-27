@@ -34,8 +34,15 @@ input {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: "Lato", sans-serif, "Arial";
   font-size: 16px;
+}
+
+main {
+  flex: 1;
 }
 
 .title {
@@ -192,6 +199,10 @@ body {
 
   .inner {
     padding: 0 30px;
+  }
+
+  .apostrofe {
+    font-size: 14px;
   }
 
   .main-link {
