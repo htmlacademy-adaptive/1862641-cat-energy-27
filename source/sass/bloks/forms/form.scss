@@ -43,7 +43,7 @@
   margin-top: 15px;
 }
 
-.form__fieldset-email, 
+.form__fieldset-email,
 .form__fieldset-number {
   padding-top: 0;
   padding-bottom: 0;
@@ -135,7 +135,6 @@
 
 .form__textarea {
   resize: none;
-  border: none;
   width: 100%;
   min-height: 150px;
   padding: 0;
@@ -359,10 +358,14 @@
   }
 
   .form__fieldset {
+    max-width: 570px;
+    flex-grow: 1;
+    padding: 0;
     margin-bottom: 0;
   }
-  
-  .form__fieldset-email, .form__fieldset-number {
+
+  .form__fieldset-email,
+  .form__fieldset-number {
     margin-top: 78px;
   }
 
@@ -382,33 +385,23 @@
     gap: 0 80px;
   }
 
-  .form__fieldset {
-    max-width: 570px;
-    flex-grow: 1;
-    padding: 0;
-  }
-
   .form__fieldset-area {
     max-width: 1220px;
-  }
-
-  .form__change-checkbox {
-    max-width: 100%;
   }
 
   .form__change-checkbox {
     max-width: 1125px;
     margin-bottom: 35px;
     justify-content: flex-start;
-    
+
     .form__change-item {
       flex-basis: auto;
-      
+
       &:not(:last-child) {
         min-width: 232px;
         margin-right: 90px;
       }
-    } 
+    }
   }
 
   .form__button-wrapper {
