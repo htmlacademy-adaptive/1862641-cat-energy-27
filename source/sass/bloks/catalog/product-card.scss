@@ -76,7 +76,7 @@
 }
 
 @media (min-width: 767px) {
-  .product-card{
+  .product-card {
     margin-top: 50px;
   }
 
@@ -142,6 +142,8 @@
   }
 
   .product-card__caption {
+    width: 130px;
+    margin: 0 auto;
     padding-top: 35px;
     padding-left: 55px;
   }
@@ -158,11 +160,6 @@
   .product-card__table {
     width: 100%;
     flex-grow: 0;
-  }
-
-  .product-card__caption {
-    width: 130px;
-    margin: 0 auto;
   }
 
   .product-card__row {
@@ -193,7 +190,6 @@
     padding-right: 50px;
     font-size: 16px;
   }
-
 }
 
 @media (min-width: 1440px) {
