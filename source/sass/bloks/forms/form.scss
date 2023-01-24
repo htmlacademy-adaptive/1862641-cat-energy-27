@@ -4,31 +4,55 @@
 
 .form__title {
   margin: 0;
+  margin-top: 25px;
   line-height: 26px;
 }
 
 .form__tagline {
   display: block;
-  padding-top: 37px;
+  padding-top: 35px;
   padding-right: 50px;
   text-transform: uppercase;
+  margin-bottom: 19px;
 }
 
 .form__tagline--line-height {
   line-height: 18px;
 }
 
-.form__info {
-  width: 100%;
-  line-height: 18px;
-}
 
 .form__fieldset {
   border: none;
-  margin: 22px 0;
+  margin-bottom: 9px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 19px;
+}
+
+.form__info {
+  width: 100%;
+  margin-top: 0;
+  line-height: 18px;
+}
+
+.form__fieldset-email {
+  margin-top: 37px;
+}
+
+.form__fieldset-number {
+  margin-top: 15px;
+}
+
+.form__fieldset-email, 
+.form__fieldset-number {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form__fieldset-area {
+  margin-top: 37px;
+  margin-bottom: -13px;
+  padding: 0;
 }
 
 .form__fieldset-line {
@@ -68,8 +92,8 @@
   max-width: 548px;
   flex-grow: 1;
   padding: 13px 0;
-  padding-left: 15px;
-  margin-left: 13px;
+  padding-left: 17px;
+  margin-left: 23px;
   border: 1px solid $color-e7e7e7;
   text-transform: uppercase;
 
@@ -117,13 +141,17 @@
   padding: 0;
   padding-top: 9px;
   padding-left: 15px;
-  border-top: 1px solid $color-changes-border;
-  border-bottom: 1px solid $color-changes-border;
+  border: 1px solid $color-changes-border;
+  text-transform: uppercase;
+}
+
+.form__change-checkbox {
+  margin-top: 15px;
 }
 
 
 .form__button-wrapper {
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .form__button {
@@ -131,6 +159,7 @@
 }
 
 .form__required-text {
+  font-family: "Lato", sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -194,9 +223,14 @@
 
 @media (min-width: 767px) {
   .form {
-    margin-bottom: 72px;
+    margin-bottom: 60px;
   }
 
+  .form__main-title {
+    margin-top: 50px;
+  }
+
+  .form__main-title,
   .form__title {
     padding-left: 40px;
   }
@@ -205,10 +239,16 @@
     display: block;
     width: 323px;
     padding-top: 54px;
+    padding-left: 40px;
   }
 
   .form__tagline--line-height {
     line-height: 30px;
+  }
+
+  .form__wrapeer {
+    margin-top: 69px;
+    padding: 0 0 0 0;
   }
 
   .form__fieldset {
@@ -219,9 +259,19 @@
     padding-right: 30px;
   }
 
-  .form__wrapeer {
-    margin-top: 54px;
-    padding: 0 0 0 0;
+  .form__fieldset-email {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .form__fieldset-number {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+
+  .form__fieldset-area {
+    margin-top: 87px;
+    margin-bottom: 80px;
   }
 
   .form__fieldset-line {
@@ -239,16 +289,23 @@
   .form__change-wrapper {
     border: 1px solid $color-border;
     padding: 25px 0 25px 25px;
+    margin-top: 26px;
+    margin-bottom: 40px;
   }
 
   .form__change-checkbox {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+    margin-top: 60px;
 
-  .form__change-item {
-    flex-basis: 40%;
+    .form__change-item {
+      flex-basis: 46%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   .form__textarea {
@@ -260,21 +317,62 @@
   .form__button-wrapper {
     display: flex;
     align-items: baseline;
+    margin: 0;
+    margin-top: -15px;
+    margin-left: 43px;
   }
 
   .form__button {
     width: 282px;
+    padding: 15px 0;
     margin-right: 64px;
   }
 
   .form__fake {
     height: 38px;
     width: 38px;
+    margin-right: 25px;
+  }
+
+  .form__required-text {
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1440px) {
+  .form {
+    margin-bottom: 90px;
+  }
+
+  .form__main-title {
+    margin-top: 65px;
+    padding: 0;
+  }
+
+  .form__tagline {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .form__wrapeer {
+    margin-top: 25px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 0;
+  }
+  
+  .form__fieldset-email, .form__fieldset-number {
+    margin-top: 78px;
+  }
+
+  .form__change-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .form__title {
+    margin-top: 75px;
     padding: 0;
   }
 
@@ -298,8 +396,24 @@
     max-width: 100%;
   }
 
-  .form__change-item {
-    flex-basis: auto;
+  .form__change-checkbox {
+    max-width: 1125px;
+    margin-bottom: 35px;
+    justify-content: flex-start;
+    
+    .form__change-item {
+      flex-basis: auto;
+      
+      &:not(:last-child) {
+        min-width: 232px;
+        margin-right: 90px;
+      }
+    } 
+  }
+
+  .form__button-wrapper {
+    padding: 0;
+    margin: 0;
   }
 
   .form__button {
