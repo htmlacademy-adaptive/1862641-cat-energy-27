@@ -126,6 +126,7 @@
 .form__tel {
   background-position: 95% 50%;
   background-repeat: no-repeat;
+  padding-right: 30px;
 }
 
 .form__email {
@@ -336,6 +337,11 @@
         margin-bottom: 30px;
       }
     }
+  }
+
+  .form__email,
+  .form__tel {
+  padding-right: 55px;
   }
 
   .form__textarea {
