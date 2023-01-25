@@ -36,6 +36,10 @@
   visibility: visible;
 }
 
+.header__menu--no-js .header__burger {
+  display: none;
+}
+
 .header__burger {
   margin-right: 20px;
 }

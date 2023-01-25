@@ -122,6 +122,37 @@
   -webkit-appearance: none; /* stylelint-disable-line */
 }
 
+.form__email,
+.form__tel {
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+.form__email {
+  background-image: url("../img/svg/letter.svg");
+
+  &:focus {
+    background-image: url("../img/svg/letter-focus.svg");
+  }
+
+  &:invalid {
+    background-image: url("../img/svg/letter-error.svg");
+  }
+}
+
+.form__tel {
+  background-image: url("../img/svg/phone.svg");
+
+  &:focus {
+    background-image: url("../img/svg/phone-focus.svg");
+  }
+
+  &:invalid {
+    background-image: url("../img/svg/phone-error.svg");
+  }
+}
+
+
 .form__change-wrapper {
   display: flex;
   flex-direction: column;
