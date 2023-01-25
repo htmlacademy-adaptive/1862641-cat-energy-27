@@ -40,6 +40,10 @@
       fill: $color-main;
     }
   }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__academy-text {

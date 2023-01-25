@@ -26,7 +26,7 @@ input {
 }
 
 .main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif, "Arial";
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -72,7 +72,7 @@ main {
 }
 
 .tagline {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -83,7 +83,7 @@ main {
   width: 100%;
   text-decoration: none;
   padding: 8px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -95,10 +95,10 @@ main {
 
   &:hover {
     background-color: $color-main-alt;
+  }
 
-    &:active {
-      opacity: 0.5;
-    }
+  &:active {
+    opacity: 0.5;
   }
 }
 
@@ -128,7 +128,7 @@ main {
 }
 
 .main-link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -136,7 +136,7 @@ main {
 }
 
 .bold-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -148,7 +148,7 @@ main {
 }
 
 .link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -163,7 +163,7 @@ main {
 }
 
 .small-bold {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -206,28 +206,28 @@ main {
   }
 
   .main-link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
   }
 
   .main-title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
   }
 
   .tagline {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
   }
 
   .title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -263,25 +263,25 @@ main {
   }
 
   .link-button {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
 
     &:focus {
-      box-shadow: 0 0 10px 0 $color-black;
+      opacity: 0.7;
     }
   }
 
   .bold-text {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
   }
 
   .small-bold {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 26px;
   }
@@ -294,7 +294,7 @@ main {
   }
 
   .link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -310,7 +310,7 @@ main {
   }
 
   .main-link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
