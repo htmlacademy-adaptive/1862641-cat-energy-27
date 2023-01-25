@@ -213,11 +213,11 @@
 }
 
 .form__radio:hover + .form__fake {
-  border-color: $color-black;
+  border-color: #bababa;
 }
 
 .form__radio:focus + .form__fake {
-  border-color: $color-black;
+  border-color: #bababa;
 }
 
 .form__radio:checked + .form__fake {
@@ -238,11 +238,11 @@
 }
 
 .form__checkbox:hover + .form__fake {
-  border-color: $color-black;
+  border-color: #bababa;
 }
 
 .form__checkbox:focus + .form__fake {
-  border-color: $color-black;
+  border-color: #bababa;
 }
 
 .form__checkbox:checked + .form__fake {
