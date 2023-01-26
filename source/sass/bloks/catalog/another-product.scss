@@ -97,6 +97,9 @@
   }
 
   .another-product__table {
+    max-width: 600px;
+    flex-grow: 1;
+    flex-wrap: wrap;
     justify-content: start;
     align-items: baseline;
     margin-top: 11px;
@@ -104,6 +107,7 @@
 
   .another-product__caption {
     min-width: 200px;
+    max-width: 300px;
     text-align: left;
     padding-right: 120px;
     margin: 0;
@@ -135,8 +139,8 @@
     padding: 0;
   }
 
-  .another-product__button {
-    max-width: 244px;
+  .another-product__link-button-wrapper {
+    width: 244px;
   }
 
   .another-product__aside {

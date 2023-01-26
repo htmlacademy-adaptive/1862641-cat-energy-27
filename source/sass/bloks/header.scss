@@ -145,7 +145,7 @@
 //DESKTOP
 @media (min-width: 1440px) {
   .header {
-    padding-top: 45px;
+    margin-top: 45px;
   }
 
   .header__content {
@@ -162,12 +162,18 @@
   }
 
   .header__list {
+    max-width: 600px;
+    flex-wrap: wrap;
     position: relative;
     z-index: 5;
   }
 
   .header__check {
     text-underline-offset: 10px;
+  }
+
+  .header__link {
+    padding: 15px 0;
   }
 
   .header__link-index {
