@@ -11,7 +11,7 @@ import csso from 'postcss-csso';
 import terser from 'gulp-terser';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync as del} from 'del';
 
 // Styles
 
