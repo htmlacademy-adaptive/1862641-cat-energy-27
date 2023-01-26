@@ -197,8 +197,7 @@
 
 .form__fake {
   display: block;
-  height: 28px;
-  width: 28px;
+  padding: 14px;
   margin-right: 16px;
   border: 1px solid $color-changes-border;
 }
@@ -365,8 +364,7 @@
   }
 
   .form__fake {
-    height: 38px;
-    width: 38px;
+    padding: 19px;
     margin-right: 25px;
   }
 

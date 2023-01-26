@@ -6,11 +6,12 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
+import squoosh from 'gulp-libsquoosh';
 import csso from 'postcss-csso';
 import terser from 'gulp-terser';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync as del} from 'del';
 
 // Styles
 
@@ -59,7 +60,11 @@ const scripts = () => {
 
 // Images
 
-
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+  }
 
   const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
@@ -67,6 +72,14 @@ const scripts = () => {
   }
 
   // WebP
+
+  const createWebp = () => {
+  return gulp.src('source/img/png/**/*','source/img/jpeg/**/*', '!source/img/favicons')
+  .pipe(squoosh({
+  webp: {}
+  }))
+  .pipe(gulp.dest('build/img/webp'))
+  }
 
 //svg
 const svg = () => {
@@ -111,8 +124,8 @@ const clean  = () => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/sass/**/**.scss', gulp.series(styles));
+  gulp.watch('source/js/**.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
@@ -120,12 +133,14 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  optimizeImages,
   gulp.parallel(
   styles,
   html,
   scripts,
   svg,
   sprite,
+  createWebp
   ),
   );
 //build
@@ -142,6 +157,7 @@ export default gulp.series(
   scripts,
   svg,
   sprite,
+  createWebp
   ),
   gulp.series(
   server,
